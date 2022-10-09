@@ -14,6 +14,11 @@
         android:theme="@style/Theme.ComposeLayouts"
         tools:targetApi="31">
         <activity
+            android:name=".activities.InstagramUIActivity"
+            android:exported="false"
+            android:label="@string/title_activity_instagram_uiactivity"
+            android:theme="@style/Theme.ComposeLayouts" />
+        <activity
             android:name=".activities.MeditationUIActivity"
             android:exported="false"
             android:label="@string/title_activity_meditation_uiactivity"

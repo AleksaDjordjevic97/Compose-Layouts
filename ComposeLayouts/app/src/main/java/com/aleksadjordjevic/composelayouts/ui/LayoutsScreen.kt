@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.aleksadjordjevic.composelayouts.activities.InstagramUIActivity
 import com.aleksadjordjevic.composelayouts.activities.MeditationUIActivity
 
 @Composable
@@ -50,7 +51,11 @@ fun LayoutsScreen(
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxHeight()
-                    .padding(10.dp),
+                    .padding(10.dp)
+                    .clickable {
+                        val intent = Intent(context, InstagramUIActivity::class.java)
+                        context.startActivity(intent)
+                    },
                 bgdPainter = instagramUiPainter)
         }
 
